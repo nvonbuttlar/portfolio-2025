@@ -41,6 +41,14 @@
   color: #888;
 }
 
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
 .square {
+  height: 64px;
+  width: 64px;
   border: 1px solid white;
+  margin: 8px;
 }
