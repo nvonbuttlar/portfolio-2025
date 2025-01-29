@@ -1,12 +1,12 @@
-import './App.css'
-import Navbar from './components/NavBar'
+import './App.css';
+import Navbar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router";
-import Home from './pages/Home';
-import About from './pages/About';
-import Education from './pages/Education';
-import Skills from './pages/Skills';
-import Fun from './pages/Fun';
-import Music from './pages/Music';
+import Home from './views/Home';
+import About from './views/About';
+import Education from './views/Education';
+import Skills from './views/Skills';
+import Fun from './views/Fun';
+import Music from './views/Music';
 
 function App() {
 
