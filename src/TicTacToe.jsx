@@ -4,6 +4,7 @@ import { useState } from 'react';
 // 1. refactor board to use loops instead of hardcoding 
 // 2. highlight squares when there is a win
 // 3. display message for a draw
+// 4. use template literals instead on concatenating strings
 
 function Square({value, onSquareClick}) {
   return (
