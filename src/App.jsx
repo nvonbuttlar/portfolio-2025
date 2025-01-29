@@ -1,17 +1,28 @@
 import './App.css'
-import TicTacToe from './TicTacToe'
-import Counter from './Counter'
+import Navbar from './components/NavBar'
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from './pages/Home';
+import About from './pages/About';
+import Education from './pages/Education';
+import Skills from './pages/Skills';
+import Fun from './pages/Fun';
+import Music from './pages/Music';
 
 function App() {
+
   return (
     <>
-      <h1>Welcome, glad you made it.</h1>
-      <Counter />
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <TicTacToe />
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/fun" element={<Fun />} />
+          <Route path="/music" element={<Music />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
