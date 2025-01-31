@@ -1,0 +1,49 @@
+// Button Styles
+button {
+  font-family: $font-primary;
+  font-weight: $font-bold;
+  background-color: $blue-chill;
+  color: $neutral-dark;
+  padding: 10px 20px;
+  border: 1px solid $neutral-light;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+    background-color: $evening-sea;
+    color: $neutral-light;
+  }
+  &:focus {
+    outline: 1px solid $powder-blue;
+  }
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+}
+
+// Anchor Link Styles
+a {
+  font-family: $font-secondary;
+  font-weight: $font-light;
+  color: $neutral-dark;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+    color: $blue-chill;
+  }
+  &:focus {
+    outline: 2px solid $powder-blue;
+  }
+  &:focus-visible {
+    outline: 2px dashed $deep-teal;
+  }
+  &:disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}
