@@ -7,6 +7,7 @@ import Education from './views/Education';
 import Skills from './views/Skills';
 import Fun from './views/Fun';
 import Music from './views/Music';
+import Styleguide from './views/Styleguide';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/fun" element={<Fun />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/styleguide" element={<Styleguide />} />
         </Routes>
       </BrowserRouter>
     </>

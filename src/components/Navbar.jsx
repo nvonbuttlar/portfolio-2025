@@ -18,6 +18,9 @@ export default function Navbar() {
         <li>
           <a href="/fun">Fun</a>
         </li>
+        <li>
+          <a href="/styleguide">Styleguide</a>
+        </li>
       </ul>
     </nav>
   );

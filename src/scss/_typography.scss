@@ -23,7 +23,9 @@ h5 { font-size: 1.25rem; }
 h6 { font-size: 1rem; }
 
 // Paragraph Styles
-p {
+p,
+div,
+span {
   font-family: $font-secondary;
   font-weight: $font-light;
   color: $deep-teal;

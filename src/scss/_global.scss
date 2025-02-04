@@ -7,11 +7,16 @@ html {
 }
 
 body {
-  height: 100%;
-  border: 10px solid $blue-chill;
+  border: 10px ridge $deep-teal;
   border-radius: 10px;
 }
 
-li {
-  list-style-type: none;
+ul {
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+  }
 }
+
+// Navigation
