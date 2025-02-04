@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
     <nav className="nav">
-      <a href="/" className="site-title">Nickvb.xyz</a>
-      <ul>
+      <a href="/" className="logo">Nickvb.xyz</a>
+      <ul className="nav__list">
         <li>
           <a href="/about">About</a>
         </li>

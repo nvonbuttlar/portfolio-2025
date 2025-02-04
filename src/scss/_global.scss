@@ -1,4 +1,6 @@
 @use './_colors.scss' as *;
+@use './_utilities.scss' as *;
+@use './_breakpoints.scss' as *;
 
 // HTML Style 
 html {
@@ -7,8 +9,17 @@ html {
 }
 
 body {
-  border: 10px ridge $deep-teal;
-  border-radius: 10px;
+  margin: 0;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+
+  @include respond-to(large) {
+    padding: 40px;
+  }
 }
 
 ul {
@@ -20,3 +31,16 @@ ul {
 }
 
 // Navigation
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: $border-radius;
+  padding: 12px;
+  border: 1px solid $blue-chill;
+
+  &__list {
+    display: flex;
+    gap: 12px;
+  }
+}
