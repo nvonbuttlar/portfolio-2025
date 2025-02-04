@@ -1,3 +1,6 @@
+@use './_colors.scss' as *;
+@use './_typography.scss' as *;
+
 // Button Styles
 button {
   font-family: $font-primary;

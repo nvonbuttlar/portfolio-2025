@@ -1,5 +1,17 @@
+@use './_colors.scss' as *;
+
 // HTML Style 
 html {
   height: 100%;
   background-color: $powder-blue;
+}
+
+body {
+  height: 100%;
+  border: 10px solid $blue-chill;
+  border-radius: 10px;
+}
+
+li {
+  list-style-type: none;
 }
