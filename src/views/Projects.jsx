@@ -4,7 +4,7 @@ import Counter from '../components/Counter'
 export default function Fun() {
   return (
     <div className="view">
-      <h1>Fun</h1>
+      <h1>Projects</h1>
       <div>
         <TicTacToe />
         <Counter />

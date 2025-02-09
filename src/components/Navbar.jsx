@@ -16,7 +16,7 @@ export default function Navbar() {
           <a href="/music">Music</a>
         </li>
         <li>
-          <a href="/fun">Fun</a>
+          <a href="/projects">Projects</a>
         </li>
         <li>
           <a href="/styleguide">Styleguide</a>

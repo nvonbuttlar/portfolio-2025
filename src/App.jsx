@@ -5,7 +5,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Education from './views/Education';
 import Skills from './views/Skills';
-import Fun from './views/Fun';
+import Projects from './views/Projects';
 import Music from './views/Music';
 import Styleguide from './views/Styleguide';
 
@@ -19,9 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/fun" element={<Fun />} />
           <Route path="/music" element={<Music />} />
           <Route path="/styleguide" element={<Styleguide />} />
         </Routes>
