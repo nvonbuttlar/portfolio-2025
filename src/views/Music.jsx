@@ -1,3 +1,7 @@
 export default function Music() {
-  return <h1>Music</h1>;
+  return (
+    <div className="view">
+      <h1>Music</h1>;
+    </div>    
+  )
 }

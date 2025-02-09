@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+      <div className="overlay"></div>
       <Navbar />
       <BrowserRouter>
         <Routes>

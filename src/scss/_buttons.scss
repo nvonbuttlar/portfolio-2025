@@ -6,7 +6,7 @@ button {
   font-family: $font-primary;
   font-weight: $font-bold;
   background-color: $blue-chill;
-  color: $deep-teal;
+  color: $powder-blue;
   padding: 10px 20px;
   border: 1px solid $neutral-light;
   border-radius: 5px;
@@ -31,7 +31,7 @@ button {
 a {
   font-family: $font-secondary;
   font-weight: $font-light;
-  color: $deep-teal;
+  color: $powder-blue;
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -43,7 +43,7 @@ a {
     outline: 2px solid $powder-blue;
   }
   &:focus-visible {
-    outline: 2px dashed $deep-teal;
+    outline: 2px dashed $powder-blue;
   }
   &:disabled {
     opacity: 0.8;

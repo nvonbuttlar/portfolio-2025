@@ -1,3 +1,7 @@
 export default function Education() {
-  return <h1>Education</h1>;
+  return (
+    <div className="view">
+      <h1>Education</h1>;
+    </div>
+  )
 }
