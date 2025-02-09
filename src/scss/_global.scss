@@ -7,7 +7,7 @@ html {
   position: relative;
   height: 100%;
   background-color: $powder-blue;
-  background: url('../assets/bg-image.webp') center center no-repeat;
+  background: url('../assets/dots.jpg') center center no-repeat;
 }
 
 body {
@@ -36,7 +36,7 @@ ul {
 
 .overlay {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   top: 0;
