@@ -7,19 +7,25 @@ export default function Navbar() {
           <a href="/about">About</a>
         </li>
         <li>
-          <a href="/education">Education</a>
-        </li>
-        <li>
           <a href="/skills">Skills</a>
         </li>
         <li>
-          <a href="/music">Music</a>
+          <a href="/development">Dev</a>
         </li>
+        {/* <li>
+          <a href="/education">Education</a>
+        </li> */}
+        {/* <li>
+          <a href="/music">Music</a>
+        </li> */}
         <li>
-          <a href="/projects">Projects</a>
+          <a href="/other">Other</a>
         </li>
         <li>
           <a href="/styleguide">Styleguide</a>
+        </li>
+        <li>
+          <a href="/music">Music</a>
         </li>
       </ul>
     </nav>
