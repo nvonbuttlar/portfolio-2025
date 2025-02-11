@@ -21,7 +21,7 @@ body {
 #root {
   margin: 0 auto;
   padding: 16px;
-  height: 100vh;
+  min-height: 100vh;
 
   @include respond-to(large) {
     padding: 40px;
@@ -61,8 +61,22 @@ ul {
   }
 
   &__list {
-    display: flex;
-    gap: 12px;
+    display: none;
+
+    @include respond-to(large) {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  &__mobile-icon {
+    cursor: pointer;
+    display: block;
+    max-width: 32px;
+
+    @include respond-to(large) {
+      display: none;
+    }
   }
 }
 
