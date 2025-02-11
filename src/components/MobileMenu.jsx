@@ -1,29 +1,10 @@
+import NavList from "./NavList";
 
-
-export default function MobileMenu() {
+export default function MobileMenu({showMobileMenu}) {
   return (
-    <div className="mobile-menu">
+    <div className={`mobile-menu ${showMobileMenu ? "mobile-menu--active" : ""}`}>
       <div>Nickvb.xyz</div>
-      <ul className="mobile-menu__nav-list">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/skills">Skills</a>
-        </li>
-        <li>
-          <a href="/development">Dev</a>
-        </li>
-        <li>
-          <a href="/other">Other</a>
-        </li>
-        <li>
-          <a href="/styleguide">Styleguide</a>
-        </li>
-        <li>
-          <a href="/music">Music</a>
-        </li>
-      </ul>
+      <NavList showMobileMenu={showMobileMenu} />
     </div>
   );
 }

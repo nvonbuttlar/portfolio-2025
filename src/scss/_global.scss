@@ -67,6 +67,18 @@ ul {
       display: flex;
       gap: 12px;
     }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $deep-teal;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__mobile-icon {
@@ -76,6 +88,20 @@ ul {
 
     @include respond-to(large) {
       display: none;
+    }
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    transition: left 0.25s ease-in;
+    background-color: $powder-blue;
+
+    &.mobile-menu--active {
+      left: 0;
     }
   }
 }

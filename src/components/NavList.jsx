@@ -1,0 +1,25 @@
+export default function NavList({showMobileMenu}) {
+
+  return (
+    <ul className={`nav__list ${showMobileMenu ? "nav__list--active" : ""}`}>
+      <li className="nav__link">
+        <a href="/about">About</a>
+      </li>
+      <li className="nav__link">
+        <a href="/skills">Skills</a>
+      </li>
+      <li className="nav__link">
+        <a href="/development">Dev</a>
+      </li>
+      <li className="nav__link">
+        <a href="/other">Other</a>
+      </li>
+      <li className="nav__link">
+        <a href="/styleguide">Styleguide</a>
+      </li>
+      <li className="nav__link">
+        <a href="/music">Music</a>
+      </li>
+    </ul>
+  );
+}

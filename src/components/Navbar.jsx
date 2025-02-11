@@ -2,6 +2,7 @@ import { Bars3Icon } from '@heroicons/react/16/solid'
 import { XMarkIcon } from '@heroicons/react/16/solid'
 import { useState } from 'react'
 import MobileMenu from './MobileMenu';
+import NavList from "./NavList";
 
 export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -18,27 +19,8 @@ export default function Navbar() {
         <XMarkIcon className="nav__mobile-icon" onClick={() => toggleMenu()} /> :
         <Bars3Icon className="nav__mobile-icon" onClick={() => toggleMenu()} />
       }
-      <ul className="nav__list">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/skills">Skills</a>
-        </li>
-        <li>
-          <a href="/development">Dev</a>
-        </li>
-        <li>
-          <a href="/other">Other</a>
-        </li>
-        <li>
-          <a href="/styleguide">Styleguide</a>
-        </li>
-        <li>
-          <a href="/music">Music</a>
-        </li>
-      </ul>
-      <MobileMenu />
+      <NavList />
+      <MobileMenu showMobileMenu={showMobileMenu} />
     </nav>
   );
 }
