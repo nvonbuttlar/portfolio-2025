@@ -6,22 +6,27 @@
 html {
   position: relative;
   height: 100%;
-  background-color: $powder-blue;
-  background-image: url('../assets/dots.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+}
+
+* { 
+  box-sizing: border-box; 
+  line-height: 0;
 }
 
 body {
   margin: 0;
   position: relative;
+  height: 100%;
+  background-color: $powder-blue;
+  background-image: url('../assets/dots.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   z-index: 1;
 }
 
 #root {
   margin: 0 auto;
   padding: 16px;
-  min-height: 100vh;
 
   @include respond-to(large) {
     padding: 40px;
@@ -70,14 +75,14 @@ ul {
 
     &--active {
       display: block;
-    }
-  }
 
-  &__link {
-    color: $deep-teal;
-
-    a {
-      color: inherit;
+      .nav__link {
+        color: $deep-teal;
+    
+        a {
+          color: inherit;
+        }
+      }
     }
   }
 
@@ -85,6 +90,7 @@ ul {
     cursor: pointer;
     display: block;
     max-width: 32px;
+    color: $powder-blue;
 
     @include respond-to(large) {
       display: none;
@@ -94,11 +100,17 @@ ul {
   .mobile-menu {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -150%;
     height: 100%;
     width: 100%;
-    transition: left 0.25s ease-in;
+    transition: left 0.4s ease-in;
     background-color: $powder-blue;
+    padding: 16px; 
+    text-align: center;
+
+    @include respond-to(large) {
+      padding: 40px;
+    }
 
     &.mobile-menu--active {
       left: 0;

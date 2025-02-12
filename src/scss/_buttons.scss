@@ -40,10 +40,12 @@ a {
     color: $blue-chill;
   }
   &:focus {
-    outline: 2px solid $powder-blue;
+    outline: 1px solid $powder-blue;
+    border-radius: 8px;
   }
   &:focus-visible {
-    outline: 2px dashed $powder-blue;
+    outline: 1px dashed $powder-blue;
+    border-radius: 8px;
   }
   &:disabled {
     opacity: 0.8;
