@@ -34,19 +34,29 @@ a {
   color: $powder-blue;
   text-decoration: none;
   transition: color 0.3s ease;
+  position: relative;
 
-  &:hover {
-    opacity: 0.9;
-    color: $blue-chill;
+  &::after {
+    content: '';  
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: $blue-chill;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.25s ease-in;
   }
-  &:focus {
-    outline: 1px solid $powder-blue;
-    border-radius: 8px;
-  }
+
+  &:hover,
+  &:focus,
   &:focus-visible {
-    outline: 1px dashed $powder-blue;
-    border-radius: 8px;
+    color: $blue-chill;
+
+    &::after {
+      width: 100%;
+    }
   }
+
   &:disabled {
     opacity: 0.8;
     pointer-events: none;
