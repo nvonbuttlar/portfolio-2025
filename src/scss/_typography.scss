@@ -12,6 +12,7 @@ $font-bold: 700;
 h1, h2, h3, h4, h5, h6 {
   font-weight: $font-bold;
   color: $powder-blue;
+  margin: 0;
 }
 
 h1 { font-size: 2.5rem; }
@@ -29,4 +30,5 @@ span {
   font-weight: $font-light;
   color: $powder-blue;
   line-height: 1.8;
+  margin: 0;
 }

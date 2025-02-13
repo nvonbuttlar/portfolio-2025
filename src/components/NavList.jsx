@@ -14,7 +14,7 @@ export default function NavList({showMobileMenu}) {
         <a href="/skills">Skills</a>
       </li>
       <li className="nav__link">
-        <a href="/development">Dev</a>
+        <a href="/portfolio">Portfolio</a>
       </li>
       <li className="nav__link">
         <a href="/other">Other</a>

@@ -9,7 +9,7 @@ import Other from './views/Other';
 import Music from './views/Music';
 import Styleguide from './views/Styleguide';
 import MapEd from './views/MapEd';
-import Development from './views/Development';
+import Portfolio from './views/Portfolio';
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/music" element={<Music />} />
           <Route path="/styleguide" element={<Styleguide />} />
-          <Route path="/development" element={<Development />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/map-ed" element={<MapEd />} />
         </Routes>
       </BrowserRouter>
