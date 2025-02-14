@@ -14,7 +14,6 @@ html {
 
 body {
   margin: 0;
-  position: relative;
   height: 100%;
   background-color: $powder-blue;
   background-image: url('../assets/dots.jpg');
@@ -24,8 +23,10 @@ body {
 }
 
 #root {
+  position: relative;
   margin: 0 auto;
   padding: 16px;
+  height: 100%;
 
   @include respond-to(large) {
     padding: 40px;
@@ -118,7 +119,8 @@ ul {
     margin-left: 16px;
     margin-top: 16px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: $border-radius;
+    z-index: 10;
 
     @include respond-to(large) {
       padding: 40px;
@@ -140,4 +142,60 @@ ul {
     padding: 16px 40px;
     margin-top: 40px;
   }
+
+  &__header {
+    position: relative;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $evening-sea;
+    }
+  }
+}
+
+// Icons
+.icon {
+  max-width: 40px;
+}
+
+
+// Portfolio Page
+
+.dev {
+  .dev-cards {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include respond-to(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .dev-card {
+    background-color: $powder-blue;
+    border-radius: $border-radius;
+    padding: 16px;
+
+    @include respond-to(large) {
+      padding: 24px;
+    }
+
+    h4, p, div {
+      color: $deep-teal;
+    }
+
+    video {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  } 
 }

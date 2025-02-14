@@ -1,4 +1,8 @@
-export default function ShowcaseCard({company, description, tech, video}) {
+import { PlayCircleIcon } from '@heroicons/react/16/solid'
+
+export default function ShowcaseCard({company, description, tech, video, startFrame}) {
+
+  startFrame = startFrame || '#t=0.0'
 
   return (
     <div className="dev-card">
@@ -10,10 +14,11 @@ export default function ShowcaseCard({company, description, tech, video}) {
         </div>
       </div>
       <div>
-      <video playsInline autoPlay muted loop controls width="400">
-        <source src={video} type="video/webm" />
-        <a href={video}>WEBM</a>
-      </video>
+        <video muted loop controls>
+          <source src={`${video + startFrame}`} type="video/webm" />
+          <a href={`${video + startFrame}`}>WEBM</a>
+        </video>
+        <PlayCircleIcon className="icon" />
       </div>
     </div>
   );
