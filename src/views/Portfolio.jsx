@@ -1,6 +1,6 @@
-import StanleyHomepageVideo from '../assets/stanley-homepage.webm'
-import StanleyPdpVideo from '../assets/stanley-pdp.webm'
-import StanleyAccountVideo from '../assets/stanley-account.webm'
+import StanleyHomepageVideo from '../assets/stanley-homepage.webm';
+import StanleyPdpVideo from '../assets/stanley-pdp.webm';
+import StanleyAccountVideo from '../assets/stanley-account.webm';
 import ShowcaseCard from '../components/ShowcaseCard';
 import ResumeButtons from '../components/ResumeButtons';
 

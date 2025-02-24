@@ -1,15 +1,13 @@
-import { useState } from 'react'
-
-export default function Modal() {
-  const [showModal, setShowModal] = useState(false);
-
+export default function Modal({showModal, mediaType, source, alt, toggleModal}) {
   return (
-    // <div className="modal">
-    //   <div className="modal__content">
-    //     <h2>Modal Content</h2>
-    //   </div>
-    // </div>
     <>
+      {showModal && (
+        <div className="modal" onClick={toggleModal}>
+          <div className="modal__content">
+            <img src={source} alt={alt} />
+          </div>
+        </div>
+      )}
     </>
   )
 }
