@@ -9,7 +9,6 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setShowMobileMenu(!showMobileMenu);
-    console.log("show mobile menu: ", showMobileMenu);
   }
 
   return (
