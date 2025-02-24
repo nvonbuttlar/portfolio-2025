@@ -26,7 +26,7 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 16px;
-  height: 100%;
+  min-height: 100%;
 
   @include respond-to(large) {
     padding: 40px;
@@ -124,6 +124,7 @@ ul {
 
     @include respond-to(large) {
       padding: 40px;
+      display: none;
     }
 
     &.mobile-menu--active {
@@ -162,12 +163,11 @@ ul {
 
 // Icons
 .icon {
-  max-width: 40px;
+  max-width: 32px;
 }
 
 
 // Portfolio Page
-
 .dev {
   .dev-cards {
     display: grid;
@@ -198,4 +198,21 @@ ul {
       border-radius: 8px;
     }
   } 
+}
+
+// Resume Buttons
+
+.resume-btns__btn {
+  display: inline-flex;
+  min-width: 180px;
+  margin-bottom: 32px;
+  cursor: pointer;
+
+  @include respond-to(large) {
+    margin-bottom: 40px;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
 }

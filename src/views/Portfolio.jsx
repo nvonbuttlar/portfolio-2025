@@ -2,6 +2,7 @@ import StanleyHomepageVideo from '../assets/stanley-homepage.webm'
 import StanleyPdpVideo from '../assets/stanley-pdp.webm'
 import StanleyAccountVideo from '../assets/stanley-account.webm'
 import ShowcaseCard from '../components/ShowcaseCard';
+import ResumeButtons from '../components/ResumeButtons';
 
 export default function Portfolio() {
   return (
@@ -10,6 +11,7 @@ export default function Portfolio() {
         <h1>Porfolio</h1>  
       </div>
       <div className='view__content'>
+        <ResumeButtons />
         <div className='dev-cards'>
           <ShowcaseCard 
             company={'Stanley 1913'}
