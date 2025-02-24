@@ -163,7 +163,7 @@ ul {
 
 // Icons
 .icon {
-  max-width: 32px;
+  max-width: 24px;
 }
 
 
@@ -201,18 +201,25 @@ ul {
 }
 
 // Resume Buttons
+.resume-btns {
+  display: flex;
+  gap: 24px;
+}
 
 .resume-btns__btn {
-  display: inline-flex;
-  min-width: 180px;
-  margin-bottom: 32px;
+  display: flex;
   cursor: pointer;
+  position: relative;
+  padding-right: 32px;
+  margin-bottom: 32px;
 
   @include respond-to(large) {
     margin-bottom: 40px;
   }
 
   svg {
-    margin-left: 8px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 12px);
   }
 }
