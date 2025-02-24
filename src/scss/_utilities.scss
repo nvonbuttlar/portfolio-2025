@@ -1,5 +1,13 @@
+@use './_colors.scss' as *;
+
 $border-radius: 12px;
 
 .hide {
   display: none;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: $el-salva;
 }

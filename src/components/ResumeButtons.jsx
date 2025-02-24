@@ -15,7 +15,7 @@ export default function ResumeButtons() {
           <DocumentArrowDownIcon className='icon' />
         </a>
       </div>
-      <Modal />
+      <dialog>My Awesome Dialog Modal</dialog>
     </>
   )
 }

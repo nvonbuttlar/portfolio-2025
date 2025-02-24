@@ -6,7 +6,7 @@ button {
   font-family: $font-primary;
   font-weight: $font-bold;
   background-color: $blue-chill;
-  color: $powder-blue;
+  color: $neutral-light;
   padding: 10px 20px;
   border: 1px solid $neutral-light;
   border-radius: 5px;
@@ -35,6 +35,7 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: '';  

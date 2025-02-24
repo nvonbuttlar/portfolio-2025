@@ -1,8 +1,10 @@
 export default function Music() {
   return (
     <div className="view">
-      <h1>Music</h1>
-      <div>
+      <div className="view__header">
+        <h1>Music</h1>
+      </div>
+      <div className="view__content">
         <p>Display list of tracks here</p>
         <ol>
           <li>Tracks should continue playing when navigating away from page</li>
