@@ -10,6 +10,7 @@ import Music from './views/Music';
 import Styleguide from './views/Styleguide';
 import MapEd from './views/MapEd';
 import Portfolio from './views/Portfolio';
+import Radio from './components/Radio';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/map-ed" element={<MapEd />} />
         </Routes>
       </BrowserRouter>
+      {/* <Radio /> */}
     </>
   )
 }
