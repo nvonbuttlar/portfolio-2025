@@ -31,7 +31,7 @@ function App() {
           <Route path="/map-ed" element={<MapEd />} />
         </Routes>
       </BrowserRouter>
-      {/* <Radio /> */}
+      <Radio />
     </>
   )
 }

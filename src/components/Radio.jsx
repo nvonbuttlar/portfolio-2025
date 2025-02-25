@@ -7,7 +7,7 @@ export default function Radio() {
       <div className="radio-tab">
         <MusicalNoteIcon className='icon' />
       </div>
-      <img className="radio" src={RadioImage} alt={"Retro Radio"} />
+      {/* <img className="radio" src={RadioImage} alt={"Retro Radio"} /> */}
     </>
   )
 }
