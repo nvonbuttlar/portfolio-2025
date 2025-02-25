@@ -8,8 +8,7 @@ import ResumePdf from '../assets/nick_von_buttlar_resume_02_2025.pdf';
 export default function ResumeButtons() {
   const [showModal, setShowModal] = useState(false);
 
-  const toggleModal = (e) => {
-    console.log("event", e);
+  const toggleModal = () => {
     setShowModal(!showModal);
   }
 
