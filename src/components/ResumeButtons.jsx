@@ -2,7 +2,8 @@ import { DocumentArrowDownIcon } from '@heroicons/react/16/solid';
 import { EyeIcon } from '@heroicons/react/16/solid';
 import { useState } from 'react';
 import Modal from './Modal';
-import Resume from '../assets/resume-02-2025.png';
+import ResumePng from '../assets/resume-02-2025.png';
+import ResumePdf from '../assets/nick_von_buttlar_resume_02_2025.pdf';
 
 export default function ResumeButtons() {
   const [showModal, setShowModal] = useState(false);
@@ -19,7 +20,7 @@ export default function ResumeButtons() {
           View Resume
           <EyeIcon className='icon' />
         </a>
-        <a className='resume-btns__btn'>
+        <a href={ResumePdf} className='resume-btns__btn' download>
           Download Resume
           <DocumentArrowDownIcon className='icon' />
         </a>
@@ -27,7 +28,7 @@ export default function ResumeButtons() {
       <Modal 
         showModal={showModal} 
         mediaType="image" 
-        source={Resume}
+        source={ResumePng}
         alt="Nick von Buttlar's resume"
         toggleModal={toggleModal}
       />
