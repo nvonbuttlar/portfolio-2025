@@ -11,3 +11,7 @@ $border-radius: 12px;
   text-underline-offset: 4px;
   text-decoration-color: $evening-sea;
 }
+
+.invert {
+  filter: invert(1);
+}

@@ -1,4 +1,4 @@
-export default function SkillBar({icon, title, progress}) {
+export default function SkillBar({icon, title, progress,}) {
   return (
     <li className="skill">
       <img className="skill__icon" src={icon} alt={`${title} Icon`} />

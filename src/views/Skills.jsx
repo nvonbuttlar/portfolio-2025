@@ -3,6 +3,13 @@ import SkillBar from "../components/SkillBar";
 import Html5 from "../assets/html5-48.png";
 import Css3 from "../assets/css3-48.png";
 import JS from "../assets/js-48.png";
+import Tailwind from "../assets/tailwindcss-48.png";
+import Vue from "../assets/vue-js-48.png";
+import React from "../assets/react-js-100.png";
+import Sass from "../assets/sass-48.png";
+import GraphQl from "../assets/graphql-48.png";
+import Node from "../assets/node-js-48.png";
+import Php from "../assets/php-48.png";
 
 export default function Skills() {
   return (
@@ -26,8 +33,47 @@ export default function Skills() {
           />
           <SkillBar 
             icon={JS}
-            title={"JS"}
+            title={"Javascript"}
+            progress={85}
+          />
+          <SkillBar 
+            icon={React}
+            title={"React"}
+            progress={75}
+          />
+          <SkillBar 
+            icon={Vue}
+            title={"Vue.js"}
+            progress={75}
+          />
+          <SkillBar 
+            icon={Sass}
+            title={"Sass"}
+            progress={90}
+          />
+          <SkillBar 
+            icon={Tailwind}
+            title={"Tailwind CSS"}
+            progress={90}
+          />
+        </ul>
+        <br/>
+        <h3 className="underline">Backend</h3>
+        <ul className="skills__group">
+          <SkillBar 
+            icon={Node}
+            title={"Node.js"}
             progress={80}
+          />
+          <SkillBar 
+            icon={Php}
+            title={"PHP"}
+            progress={80}
+          />
+          <SkillBar 
+            icon={GraphQl}
+            title={"GraphQL"}
+            progress={50}
           />
         </ul>
       </div>
