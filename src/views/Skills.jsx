@@ -10,6 +10,10 @@ import Sass from "../assets/sass-48.png";
 import GraphQl from "../assets/graphql-48.png";
 import Node from "../assets/node-js-48.png";
 import Php from "../assets/php-48.png";
+import Liquid from "../assets/shopify-48.png";
+import MySql from "../assets/mysql-48.png";
+import Git from "../assets/git-48.png";
+import Postman from "../assets/postman-48.png";
 
 export default function Skills() {
   return (
@@ -24,7 +28,7 @@ export default function Skills() {
           <SkillBar 
             icon={Html5}
             title={"HTML5"}
-            progress={95}
+            progress={100}
           />
           <SkillBar 
             icon={Css3}
@@ -34,17 +38,17 @@ export default function Skills() {
           <SkillBar 
             icon={JS}
             title={"Javascript"}
-            progress={85}
+            progress={90}
           />
           <SkillBar 
             icon={React}
             title={"React"}
-            progress={75}
+            progress={80}
           />
           <SkillBar 
             icon={Vue}
             title={"Vue.js"}
-            progress={75}
+            progress={80}
           />
           <SkillBar 
             icon={Sass}
@@ -54,7 +58,12 @@ export default function Skills() {
           <SkillBar 
             icon={Tailwind}
             title={"Tailwind CSS"}
-            progress={90}
+            progress={85}
+          />
+          <SkillBar 
+            icon={Liquid}
+            title={"Liquid"}
+            progress={100}
           />
         </ul>
         <br/>
@@ -63,17 +72,32 @@ export default function Skills() {
           <SkillBar 
             icon={Node}
             title={"Node.js"}
-            progress={80}
+            progress={70}
           />
           <SkillBar 
             icon={Php}
             title={"PHP"}
-            progress={80}
+            progress={70}
           />
           <SkillBar 
             icon={GraphQl}
             title={"GraphQL"}
-            progress={50}
+            progress={55}
+          />
+          <SkillBar 
+            icon={MySql}
+            title={"MySql"}
+            progress={65}
+          />
+          <SkillBar 
+            icon={Git}
+            title={"Git"}
+            progress={90}
+          />
+          <SkillBar 
+            icon={Postman}
+            title={"Postman"}
+            progress={80}
           />
         </ul>
       </div>
